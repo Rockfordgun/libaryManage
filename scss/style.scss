@@ -1,0 +1,163 @@
+
+
+
+.navbar {
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar-sticky {
+    opacity: 0.9;
+    box-shadow: 0.0.10px rgba($color: #ffffff, $alpha: 0.5);
+}
+
+.bannerContainer{
+    background: url(../img/librarygirly.jpg)center center;
+    background-size: cover; 
+    height: 80vh;
+}
+
+.nav-link:hover{
+    color: #ED8610 !important;
+    font-weight: 700;
+    text-decoration-line: underline;
+    text-underline-offset: 1em
+}
+
+.navbar-toggler{
+    background-color: #ED8610;
+}
+
+.book-description {
+    max-height: 200px; /* Adjust this value as needed */
+    overflow: hidden;
+}
+
+.newBookContainer{
+    
+    width: 90vw;
+    
+}
+
+.bookRead{
+    height: 40%;
+}
+
+/*Sidebar start*/
+.wrapper {
+    align-items: stretch;
+    display: flex;
+    width: 100%;
+  }
+  
+  #sidebar {
+    max-width: 264px;
+    min-width: 264px;
+    transition: all 0.35s ease-in-out;
+    z-index: 1111;
+  }
+  
+  /* Sidebar collapse */
+  #sidebar.collapsed {
+    margin-left: -264px;
+  }
+  
+  .main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    transition: all 0.35s ease-in-out;
+  }
+  
+  .sidebar-logo {
+    padding: 1.15rem 1.5rem;
+  }
+  
+  .sidebar-nav {
+    padding: 0;
+  }
+  
+  .sidebar-header {
+    font-family: var(--ff-primary);
+    color: var(--clr-primary-grey);
+    font-size: 1rem;
+    padding: 1.5rem 1.5rem 0.375rem;
+  }
+  
+  a.sidebar-link {
+    padding: 0.625rem 1.625rem;
+    font-weight: 400 !important;
+    text-decoration: none;
+    line-height: 1;
+    color: #FA7654;
+    position: relative;
+    display: block;
+    font-size: 1rem;
+  }
+  
+  .sidebar-link[data-bs-toggle=collapse]::after {
+    border: solid;
+    border-width: 0 0.075rem 0.075rem 0;
+    content: "";
+    display: inline-block;
+    padding: 2px;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.4rem;
+    transform: rotate(-135deg);
+    transition: all 0.2s ease-out;
+  }
+  
+  .sidebar-link[data-bs-toggle=collapse].collapsed::after {
+    transform: rotate(45deg);
+    transition: all 0.2s ease-out;
+  }
+  
+  .content {
+    flex: 1;
+    max-width: 100vw;
+    width: 100vw;
+  }
+  
+  /* Responsive */
+  @media (min-width: 768px) {
+    .content {
+      width: auto;
+    }
+  }
+  /*sidebar end*/
+
+  /*Banner Book*/
+.book_header{
+
+
+    height: 80vh;
+    background: url(../img/fantasy.jpg)center center no-repeat;
+    background-size: cover;
+  }
+
+.books_paragraph{
+    
+        max-height: 100px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        
+    
+}
+
+@media screen and (max-width:540px){
+
+
+    .bookContainer{
+        height: 450px
+    }
+
+
+
+    .card{
+        height: 9rem;
+    }
+}
